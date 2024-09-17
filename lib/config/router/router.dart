@@ -1,3 +1,4 @@
+import 'package:board_game_manager/presentation/screens/game_list_screen.dart';
 import 'package:board_game_manager/presentation/screens/home_screen.dart';
 import 'package:board_game_manager/presentation/screens/login_screen.dart';
 import 'package:board_game_manager/presentation/screens/signup_screen.dart';
@@ -16,6 +17,10 @@ final GoRouter router = GoRouter(
     GoRoute(
       path: '/signup',
       builder: (context, state) => const SignupScreen(),
-    )
+    ),
+    GoRoute(
+      path: '/games',
+      builder: (context, state) => const GameListScreen(),
+    ),
   ]
 );

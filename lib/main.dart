@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       title: 'Board Game Manager',
+      debugShowCheckedModeBanner: false,
       routerConfig: router,
       theme: ThemeData(
         primarySwatch: Colors.blue,
