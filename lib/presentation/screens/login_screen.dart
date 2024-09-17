@@ -11,12 +11,23 @@ class LoginScreen extends StatelessWidget {
         title: const Text('Login'),
       ),
       body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            context.go('/home'); //Navegar a la pantalla de Home
-          }, 
-          child: const Text('Login'),
-        )
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ElevatedButton(
+              onPressed: () {
+                context.go('/home'); //Navega al Home despues del login
+              }, 
+              child: const Text('Login'),
+            ),
+            TextButton(
+              onPressed: () {
+                context.go('/signup'); //Navega a la pantalla de registro
+              },
+              child: const Text('¿No tienes cuenta? Registrate'),
+            ),
+          ]
+        ),
       ),
     );
   }
