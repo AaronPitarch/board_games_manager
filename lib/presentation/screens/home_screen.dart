@@ -20,6 +20,13 @@ class HomeScreen extends StatelessWidget {
               },
               child: const Text('Ver Juegos de Mesa'),
             ),
+            const SizedBox(height: 16),
+            ElevatedButton(
+              onPressed: () {
+                context.go('/bgg-games'); //Navegar a la pantalla de juegos
+              }, 
+              child: const Text('Ver juegos API'),
+            ),
           ],
         ),
       ),

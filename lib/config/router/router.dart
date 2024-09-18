@@ -1,3 +1,4 @@
+import 'package:board_game_manager/presentation/screens/bgg_game_list_screen.dart';
 import 'package:board_game_manager/presentation/screens/game_list_screen.dart';
 import 'package:board_game_manager/presentation/screens/home_screen.dart';
 import 'package:board_game_manager/presentation/screens/login_screen.dart';
@@ -21,6 +22,10 @@ final GoRouter router = GoRouter(
     GoRoute(
       path: '/games',
       builder: (context, state) => const GameListScreen(),
+    ),
+    GoRoute(
+      path: '/bgg-games',
+      builder: (context, state) => const BggGameListScreen(),
     ),
   ]
 );
